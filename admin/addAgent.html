@@ -29,9 +29,7 @@
         <a class="navbar-brand" href="#" style="color:#fff; padding-left:80px;">
                         inHealth
                         </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                        </button>
+
         <div class="collapse navbar-collapse" id="navbarText">
             <ul class="navbar-nav mr-auto">
             </ul>
@@ -54,57 +52,66 @@
     </ul>
 
     <div class="container" style="padding:20px">
-        <form class="ui form">
-            <h4 class="ui">Add New Agent</h4>
-            <div class="field">
-                <div class="two fields">
-                    <div class="field">
-                        <input type="text" name="shipping[first-name]" placeholder="First Name">
-                    </div>
-                    <div class="field">
-                        <input type="text" name="shipping[last-name]" placeholder="Last Name">
+        <div class="card" style="padding:30px">
+
+            <form class="ui form">
+                <h4 class="ui">Add New Agent</h4>
+                <p>Please fill the form below to add a new agent</p>
+                <div class="field">
+                    <div class="two fields">
+                        <div class="field">
+                            <input type="text" name="firstname" placeholder="First Name*">
+                        </div>
+                        <div class="field">
+                            <input type="text" name="lastname" placeholder="Last Name*">
+                        </div>
                     </div>
                 </div>
-            </div>
 
-            <div class="field">
-                <div class="two fields">
-                    <div class="field">
-                        <input type="text" name="shipping[first-name]" placeholder="First Name">
-                    </div>
-                    <div class="field">
-                        <input type="text" name="shipping[last-name]" placeholder="Last Name">
+                <div class="field">
+                    <div class="two fields">
+                        <div class="field">
+                            <input type="date" name="dob" placeholder="Date of Birth*">
+                        </div>
+                        <div class="field">
+                            <select class="ui fluid dropdown" placeholder="Gender">
+                                <option disabled selected value="">Gender</option>                        
+                                    </select>
+                        </div>
                     </div>
                 </div>
-            </div>
 
-            <h4 class="ui dividing header"></h4>
+                <h4 class="ui dividing header"></h4>
 
-            <div class="field">
-                <div class="two fields">
-                    <div class="field">
-                        <input type="text" name="shipping[last-name]" placeholder="Last Name">
-                    </div>
+                <div class="field">
+                    <div class="two fields">
+                        <div class="field">
+                            <input type="text" name="telephone" placeholder="Telephone*">
+                        </div>
 
-                    <div class="field">
-                        <input type="text" name="shipping[last-name]" placeholder="Last Name">
-                    </div>
-                </div>
-            </div>
-
-            <div class="field">
-                <div class="two fields">
-                    <div class="field">
-                        <select class="ui fluid dropdown">
-                                </select>
-                    </div>
-                    <div class="field">
-                        <input type="text" name="shipping[last-name]" placeholder="Last Name">
+                        <div class="field">
+                            <input type="text" name="email" placeholder="Email*">
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="ui button" tabindex="0">Submit Order</div>
-        </form>
+
+                <div class="field">
+                    <div class="two fields">
+                        <div class="field">
+                            <select class="ui fluid dropdown">
+                                <option disabled selected value="" >Nationality</option>                        
+                            </select>
+                        </div>
+
+                        <div class="field">
+                            <input type="text" name="hometwon" placeholder="Hometown*">
+                        </div>
+                    </div>
+                </div>
+                <p>NB: All fields with * are required</p>
+                <div class="ui button primary" style="float:right; border-radius:100px">Submit</div>
+            </form>
+        </div>
     </div>
 </body>
 
