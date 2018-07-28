@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Admin</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" media="screen" href="index.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="../semantic/semantic.min.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+    <script src="semantic/dist/semantic.min.js"></script>
+
+    <link href="https://fonts.googleapis.com/css?family=Comfortaa" rel="stylesheet">
+    <script src="main.js"></script>
+
+    <style>
+        * {
+            font-family: 'Comfortaa', cursive;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light" style="background-color:#AE0725; padding:15px">
+        <a class="navbar-brand" href="#" style="color:#fff; padding-left:80px;">
+                                        inHealth
+                                        </a>
+
+        <div class="collapse navbar-collapse" id="navbarText">
+            <ul class="navbar-nav mr-auto">
+            </ul>
+            <span class="navbar-text" style="color:#fff; padding-right:85px">
+                                            Admin Name <i class="angle down icon"></i>         
+                                            </span>
+        </div>
+    </nav>
+
+    <ul class="nav nav-tabs justify-content-left" style="background:#fff; padding-left:85px">
+        <div class="ui  horizontal list" style=" padding:8px; color:#828282">
+            <div class="item">DASHBOARD</div>
+            <div class="item">AGENT</div>
+            <div class="item">HOSPITAL</div>
+            <div class="item">SUBSCRIBER</div>
+            <div class="item">SEARCH</div>
+            <div class="item">SETTINGS</div>
+
+        </div>
+    </ul>
+
+
+    <div class="container" style="padding:20px">
+        <div class="card" style="padding:30px">
+
+            <form class="ui form">
+                <h4 class="ui">Edit Agent Details</h4>
+                <p>Please modify details below</p>
+                <div class="field">
+                    <div class="two fields">
+                        <div class="field">
+                            <input type="text" name="firstname" placeholder="First Name*">
+                        </div>
+                        <div class="field">
+                            <input type="text" name="lastname" placeholder="Last Name*">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="field">
+                    <div class="two fields">
+                        <div class="field">
+                            <input type="date" name="dob" placeholder="Date of Birth*">
+                        </div>
+                        <div class="field">
+                            <select class="ui fluid dropdown" placeholder="Gender">
+                                    <option disabled selected value="">Gender</option>                        
+                                        </select>
+                        </div>
+                    </div>
+                </div>
+
+                <h4 class="ui dividing header"></h4>
+
+                <div class="field">
+                    <div class="two fields">
+                        <div class="field">
+                            <input type="text" name="telephone" placeholder="Telephone*">
+                        </div>
+
+                        <div class="field">
+                            <input type="text" name="email" placeholder="Email*">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="field">
+                    <div class="two fields">
+                        <div class="field">
+                            <select class="ui fluid dropdown">
+                                    <option disabled selected value="" >Nationality</option>                        
+                                </select>
+                        </div>
+
+                        <div class="field">
+                            <input type="text" name="hometwon" placeholder="Hometown*">
+                        </div>
+                    </div>
+                </div>
+                <div class="ui button primary" style="float:right; border-radius:100px">Save</div>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
