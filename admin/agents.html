@@ -17,148 +17,155 @@
     <link href="https://fonts.googleapis.com/css?family=Comfortaa" rel="stylesheet">
     <script src="main.js"></script>
     <style>
-        * {
-            font-family: 'Comfortaa', cursive;
-        }
-        
-        h1 {
-            font-family: 'Lato', sans-serif;
-            color: #AE0725
-        }
-        
-        h3 {
-            padding-left: 18px
-        }
-        
-        h6 {
-            color: #828282;
-        }
-        
-        .container {
-            padding: 30px
-        }
-        
-        body {
-            background: #f6f6f6;
-        }
-        
-        i {
-            font-size: 25px
-        }
-        
-        ul {
-            cursor: pointer;
-        }
-        
-        .item:hover {
-            color: #AE0725;
-        }
-        
-        .rounded {
-            border-radius: 100px !important;
-        }
-    </style>
+            * {
+                font-family: 'Comfortaa', cursive;
+                /* outline: 1px solid blue !important; */
+            }
+            
+            h1 {
+                font-family: 'Lato', sans-serif;
+                color: #AE0725
+            }
+            
+            h6 {
+                color: #828282;
+            }
+            
+            .container {
+                padding: 30px
+            }
+            
+            body {
+                background: #f6f6f6;
+            }
+            
+            i {
+                font-size: 25px
+            }
+            
+            ul {
+                cursor: pointer;
+            }
+    
+            a.item {
+                color: #828282 !important;
+            }
+            .rounded {
+                border-radius: 30px !important;
+            }
+            
+            a.item:hover {
+                color: #AE0725 !important;
+            }
+        </style>
 
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light" style="background-color:#AE0725; padding:15px">
-        <a class="navbar-brand" href="#" style="color:#fff; padding-left:80px;">
-                inHealth
-                </a>
-
-        <div class="collapse navbar-collapse" id="navbarText">
-            <ul class="navbar-nav mr-auto">
-            </ul>
-            <span class="navbar-text" style="color:#fff; padding-right:85px">
-                    Admin Name <i class="angle down icon"></i>         
-                    </span>
-        </div>
-    </nav>
-
-    <ul class="nav nav-tabs justify-content-left" style="background:#fff; padding-left:85px">
-        <div class="ui  horizontal list" style=" padding:8px; color:#828282">
-            <div class="item">DASHBOARD</div>
-            <div class="item">AGENT</div>
-            <div class="item">HOSPITAL</div>
-            <div class="item">SUBSCRIBER</div>
-            <div class="item">SEARCH</div>
-            <div class="item">SETTINGS</div>
-
-        </div>
-    </ul>
-
-
-
-    <div class="container" style="padding:50px">
-        <div class="card">
-            <div class="ui" style="padding:30px">
-                <div class="row">
-                    <div class="col">
-                        <h3>ALL AGENTS</h3>
-                    </div>
-                    <div class="col"></div>
-                    <div class="col-3">
-                        <button class="ui blue button" style="border-radius:100px">Add agent</button>
-                    </div>
-
+        <nav class="navbar navbar-expand-lg navbar-light" style="background-color:#AE0725; padding:15px">
+                <a class="navbar-brand" href="#" style="color:#fff; margin-left:120px;">
+                        inHealth
+                        </a>
+                <!--<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                        </button>-->
+                <div class="collapse navbar-collapse" id="navbarText">
+                    <ul class="navbar-nav mr-auto">
+                    </ul>
+                    <span class="navbar-text" style="color:#fff; margin-right:130px">
+                            Admin Name <i class="angle down icon"></i>         
+                            </span>
                 </div>
+            </nav>
 
-                <table class="ui column very basic table padded">
-                    <thead style="color:#828282;" class="padded">
-                        <tr>
-                            <th>First Name</th>
-                            <th>Last Name</th>
-                            <th class="three column wide">Gender</th>
-                            <th>Telephone</th>
-                            <th>Action</th>
+            <ul class="nav nav-tabs justify-content-left" style="background:#fff; padding-left:85px">
+                    <div class="ui horizontal list" style="padding:20px 20px; margin-left: 31px; color:#828282">
+                        <a href="" class="item">DASHBOARD</a>
+                        <a href="" class="item">AGENT</a>
+                        <a href="" class="item">HOSPITAL</a>
+                        <a href="" class="item">SUBSCRIBER</a>
+                        <a href="" class="item">SEARCH</a>
+                        <a href="" class="item">SETTINGS</a>
+            
+                    </div>
+                </ul>
 
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr class="three column wide">
-                            <td>John</td>
-                            <td>Approved</td>
-                            <td>None</td>
-                            <td>None</td>
-                            <td>
-                                <div class="row">
-                                    <a href="" class="ui rounded basic green button">View</a>
-                                    <a href=" " class="ui rounded basic yellow button">Edit</a>
-                                    <a href=" " class="ui rounded basic red button ">Delete</a>
+
+
+    <div class="container">
+            <div class="row">
+                    <div class="col-sm-12 col-md-12 col-lg-12" style="padding:10px">
+                            <div class="card">
+                                    <div class="ui" style="padding:30px">
+                                        <div class="row">
+                                            <div class="col">
+                                                <h3>ALL AGENTS</h3>
+                                            </div>
+                                            <div class="col"></div>
+                                            <div class="col-3">
+                                                <button class="ui blue button" style="border-radius:100px">Add agent</button>
+                                            </div>
+                        
+                                        </div>
+                        
+                                        <table class="ui column very basic table padded">
+                                            <thead style="color:#828282;" class="padded">
+                                                <tr>
+                                                    <th style="padding-top: 10px;">First Name</th>
+                                                    <th style="padding-top: 10px;">Last Name</th>
+                                                    <th style="padding-top: 10px;" class="three column wide">Gender</th>
+                                                    <th style="padding-top: 10px;">Telephone</th>
+                                                    <th style="padding-top: 10px;">Action</th>
+                        
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr class="three column wide">
+                                                    <td>John</td>
+                                                    <td>Approved</td>
+                                                    <td>None</td>
+                                                    <td>None</td>
+                                                    <td>
+                                                        <div class="row">
+                                                            <a href="#" class="ui rounded basic green button">View</a>
+                                                            <a href="#" class="ui rounded basic yellow button">Edit</a>
+                                                            <a href="#" class="ui rounded basic red button ">Delete</a>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Jamie</td>
+                                                    <td>Approved</td>
+                                                    <td>Requires call</td>
+                                                    <td>None</td>
+                                                    <td>
+                                                        <div class="row">
+                                                            <a href="" class="ui rounded basic green button">View</a>
+                                                            <a href=" " class="ui rounded basic yellow button ">Edit</a>
+                                                            <a href=" " class="ui rounded basic red button ">Delete</a>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Jill</td>
+                                                    <td>Denied</td>
+                                                    <td>None</td>
+                                                    <td>None</td>
+                                                    <td>
+                                                        <div class="row">
+                                                            <a href="" class="ui rounded basic green button">View</a>
+                                                            <a href=" " class="ui rounded basic yellow button ">Edit</a>
+                                                            <a href=" " class="ui rounded basic red button ">Delete</a>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
                                 </div>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>Jamie</td>
-                            <td>Approved</td>
-                            <td>Requires call</td>
-                            <td>None</td>
-                            <td>
-                                <div class="row">
-                                    <a href="" class="ui rounded basic green button">View</a>
-                                    <a href=" " class="ui rounded basic yellow button ">Edit</a>
-                                    <a href=" " class="ui rounded basic red button ">Delete</a>
-                                </div>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>Jill</td>
-                            <td>Denied</td>
-                            <td>None</td>
-                            <td>None</td>
-                            <td>
-                                <div class="row">
-                                    <a href="" class="ui rounded basic green button">View</a>
-                                    <a href=" " class="ui rounded basic yellow button ">Edit</a>
-                                    <a href=" " class="ui rounded basic red button ">Delete</a>
-                                </div>
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
+                    </div>
             </div>
-        </div>
+        
     </div>
 
 </body>
